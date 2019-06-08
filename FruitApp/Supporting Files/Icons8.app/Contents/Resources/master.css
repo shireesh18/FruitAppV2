@@ -1,0 +1,19 @@
+body {
+  font-family: 'HelveticaNeue-Light';
+  font-size: 9pt;
+  color: #666666;
+  margin: 0;
+  padding: 0;
+  cursor: default;
+}
+
+p {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #D727EF;
+  text-decoration: none;
+}

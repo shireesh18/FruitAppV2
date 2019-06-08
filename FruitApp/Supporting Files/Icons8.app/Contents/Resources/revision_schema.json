@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "timestamp": {
+            "type": "integer"
+        },
+        "created": {
+            "type": "integer"
+        },
+        "updated": {
+            "type": "integer"
+        },
+        "deleted": {
+            "type": "integer"
+        },
+        "bytesize": {
+            "type": "integer"
+        },
+        "url": {
+            "type": "string"
+        }
+    },
+    "required": [
+                 "id",
+                 "timestamp",
+                 "created",
+                 "updated",
+                 "deleted",
+                 "bytesize",
+                 "url"
+                 ]
+}

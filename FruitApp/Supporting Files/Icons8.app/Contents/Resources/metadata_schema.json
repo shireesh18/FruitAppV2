@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "single": {
+            "type": "object",
+            "properties": {
+                "bytesize": {
+                    "type": "integer"
+                },
+                "url": {
+                    "type": "string"
+                },
+                "md5": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                         "bytesize",
+                         "url",
+                         "md5"
+                         ]
+        },
+        "last_revision": {
+            "type": "integer"
+        },
+        "range": {
+            "type": "integer"
+        }
+    },
+    "required": [
+                 "single",
+                 "last_revision",
+                 "range"
+                 ]
+}
