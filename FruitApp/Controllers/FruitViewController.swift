@@ -11,7 +11,6 @@ import UIKit
 class FruitViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    
     let dataSource : FruitDataSource
     var fruits : [Fruit] = []
     required init?(coder aDecoder: NSCoder) {
@@ -35,11 +34,9 @@ extension FruitViewController {
     }
     
 }
-extension FruitViewController {
-    
-}
 
 //MARK - get data from api call
+
 extension FruitViewController {
     func getData(){
         let url = URL(string: "https://raw.githubusercontent.com/fmtvp/recruit-test-data/master/data.json")!
