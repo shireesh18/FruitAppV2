@@ -12,6 +12,7 @@
 		6914A8AB22AA9BAC00A669E8 /* FruitDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6914A8AA22AA9BAC00A669E8 /* FruitDatasource.swift */; };
 		6914A8AD22AAA1E000A669E8 /* FruitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6914A8AC22AAA1E000A669E8 /* FruitViewController.swift */; };
 		6914A8AF22AABD5F00A669E8 /* FruitDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6914A8AE22AABD5F00A669E8 /* FruitDetailViewController.swift */; };
+		69248CA922AC650600085B56 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69248CA822AC650600085B56 /* NetworkRequest.swift */; };
 		69540D6F22A9975A003A74C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69540D6E22A9975A003A74C3 /* AppDelegate.swift */; };
 		69540D7422A9975A003A74C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69540D7222A9975A003A74C3 /* Main.storyboard */; };
 		69540D7622A9975B003A74C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69540D7522A9975B003A74C3 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 		6914A8AA22AA9BAC00A669E8 /* FruitDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDatasource.swift; sourceTree = "<group>"; };
 		6914A8AC22AAA1E000A669E8 /* FruitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitViewController.swift; sourceTree = "<group>"; };
 		6914A8AE22AABD5F00A669E8 /* FruitDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailViewController.swift; sourceTree = "<group>"; };
+		69248CA822AC650600085B56 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		69540D6B22A9975A003A74C3 /* FruitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69540D6E22A9975A003A74C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69540D7322A9975A003A74C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				6914A8A622AA978100A669E8 /* FruitCell.swift */,
 				6914A8A822AA9A5B00A669E8 /* Fruit.swift */,
 				6914A8AA22AA9BAC00A669E8 /* FruitDatasource.swift */,
+				69248CA822AC650600085B56 /* NetworkRequest.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69248CA922AC650600085B56 /* NetworkRequest.swift in Sources */,
 				6914A8AB22AA9BAC00A669E8 /* FruitDatasource.swift in Sources */,
 				6914A8A922AA9A5B00A669E8 /* Fruit.swift in Sources */,
 				6914A8AF22AABD5F00A669E8 /* FruitDetailViewController.swift in Sources */,

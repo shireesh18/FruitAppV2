@@ -9,7 +9,7 @@
 import UIKit
 
 class FruitDataSource : NSObject{
-    let fruits : [Fruit]
+    var fruits : [Fruit]
      init(fruits : [Fruit]) {
         self.fruits = fruits
     }
@@ -28,6 +28,5 @@ extension FruitDataSource : UITableViewDataSource {
         return cell
     }
 }
-
 
 

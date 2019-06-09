@@ -20,10 +20,11 @@ class FruitDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        fruitLabel?.text = fruit?.type
-        priceLabel?.text = "\(fruit?.price ?? 0.0)"
-        weightLabel?.text = "\(fruit?.weight ?? 0.0)"
+        fruitLabel?.text = fruit?.type ?? ""
+        let price = fruit?.price ?? 0.0
+        priceLabel?.text = "£ \(price/100)"
+        let weight = fruit?.weight ?? 0.0
+        weightLabel?.text = "\(weight/100) KG"
 	       
     }
   

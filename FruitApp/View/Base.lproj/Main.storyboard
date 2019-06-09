@@ -41,7 +41,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rF4-aj-wE8"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Fruit App" id="KWo-f6-hQH"/>
+                    <navigationItem key="navigationItem" title="Fruit App" id="KWo-f6-hQH">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="1p9-jD-HoD">
+                            <connections>
+                                <action selector="refreshBtnPressed:" destination="NCb-f7-9HE" id="KOR-1R-ZDr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="Hi4-O8-sQu" id="xUO-Gu-jjt"/>
                         <segue destination="UO2-Na-K4f" kind="show" identifier="fruitDetailsIdentifier" id="gWG-wg-inl"/>
@@ -49,7 +55,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yez-ir-2D2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-166" y="-9"/>
+            <point key="canvasLocation" x="-4073" y="-459"/>
         </scene>
         <!--Fruit Details-->
         <scene sceneID="eqH-Ss-M5M">
@@ -93,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cH5-Dr-kJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="633" y="-9"/>
+            <point key="canvasLocation" x="-3412" y="-356"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="o90-97-JKz">
@@ -115,7 +121,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="opH-Hc-WIi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-946" y="-9"/>
+            <point key="canvasLocation" x="-5255" y="-354"/>
         </scene>
     </scenes>
 </document>
