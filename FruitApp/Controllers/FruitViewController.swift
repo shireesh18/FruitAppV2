@@ -30,6 +30,7 @@ extension FruitViewController {
         getData()
         tableView.dataSource = dataSource
         tableView.delegate = self
+        tableView.separatorStyle = .none
         tableView.reloadData()
     }
     
@@ -41,12 +42,15 @@ extension FruitViewController {
     func getData(){
         let url = URL(string: FruitAppConstants.url)!
         let request = NetworkRequest(url: url)
+        //var executionTime : Double
+        let startDate = Date()
         request.execute { [weak self] (data) in
             if let data = data {
                 self?.decode(data)
             }
         }
-    }
+        NetworkRequest.sendUsageStats(event: FruitAppConstants.eventLoad, data: "\(Date().timeIntervalSince(startDate) * 1000)")
+        }
 }
 
 // MARK - JSON data decoder method
@@ -58,7 +62,8 @@ private extension FruitViewController {
             let decoded = try decoder.decode(JSONData.self, from: data)
             dataSource.fruits = decoded.fruit
             tableView.reloadData()
-        } catch {
+        } catch let error {
+            NetworkRequest.sendUsageStats(event: FruitAppConstants.eventError, data: error.localizedDescription)
             let title = FruitAppConstants.alertTitle
             let message = FruitAppConstants.alertMessage
             let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -79,6 +84,7 @@ extension FruitViewController : UITableViewDelegate {
         if let destinationVC = segue.destination as? FruitDetailViewController {
             if let indexPath = tableView.indexPathForSelectedRow {
                 destinationVC.fruit = dataSource.fruits[indexPath.row]
+                destinationVC.startDate = Date()
             }
         }
     }

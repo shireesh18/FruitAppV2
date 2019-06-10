@@ -21,5 +21,16 @@ class NetworkRequest {
             completion(data)
         })
         task.resume()
-    }
+       }
 }
+//MARK - method to send usage stats
+
+extension NetworkRequest {
+    public static func sendUsageStats(event:String, data:String){
+        let url = URL(string: FruitAppConstants.statsURL+"event=\(event)&data=\(data)")!
+        let request = NetworkRequest(url: url)
+        request.execute { _ in
+            }
+        }
+    }
+

@@ -23,7 +23,7 @@ extension FruitDataSource : UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: FruitCell.self), for: indexPath) as! FruitCell
         let fruit = fruits[indexPath.row]
-        cell.textLabel?.text = fruit.type
+        cell.textLabel?.text = fruit.type?.uppercased()
         cell.textLabel?.textAlignment = .center
         return cell
     }
