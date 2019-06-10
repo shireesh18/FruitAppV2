@@ -18,6 +18,7 @@
 		69540D7622A9975B003A74C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69540D7522A9975B003A74C3 /* Assets.xcassets */; };
 		69540D7922A9975B003A74C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69540D7722A9975B003A74C3 /* LaunchScreen.storyboard */; };
 		69540D8422A9975B003A74C3 /* FruitAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69540D8322A9975B003A74C3 /* FruitAppTests.swift */; };
+		69BC9A2D22AE53C7002CBB7E /* FruitAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BC9A2C22AE53C7002CBB7E /* FruitAppConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		69540D7F22A9975B003A74C3 /* FruitAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FruitAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69540D8322A9975B003A74C3 /* FruitAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitAppTests.swift; sourceTree = "<group>"; };
 		69540D8522A9975B003A74C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69BC9A2C22AE53C7002CBB7E /* FruitAppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitAppConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				6914A8A822AA9A5B00A669E8 /* Fruit.swift */,
 				6914A8AA22AA9BAC00A669E8 /* FruitDatasource.swift */,
 				69248CA822AC650600085B56 /* NetworkRequest.swift */,
+				69BC9A2C22AE53C7002CBB7E /* FruitAppConstants.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			files = (
 				69248CA922AC650600085B56 /* NetworkRequest.swift in Sources */,
 				6914A8AB22AA9BAC00A669E8 /* FruitDatasource.swift in Sources */,
+				69BC9A2D22AE53C7002CBB7E /* FruitAppConstants.swift in Sources */,
 				6914A8A922AA9A5B00A669E8 /* Fruit.swift in Sources */,
 				6914A8AF22AABD5F00A669E8 /* FruitDetailViewController.swift in Sources */,
 				6914A8A722AA978100A669E8 /* FruitCell.swift in Sources */,

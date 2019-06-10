@@ -39,7 +39,7 @@ extension FruitViewController {
 
 extension FruitViewController {
     func getData(){
-        let url = URL(string: "https://raw.githubusercontent.com/fmtvp/recruit-test-data/master/data.json")!
+        let url = URL(string: FruitAppConstants.url)!
         let request = NetworkRequest(url: url)
         request.execute { [weak self] (data) in
             if let data = data {
@@ -59,8 +59,8 @@ private extension FruitViewController {
             dataSource.fruits = decoded.fruit
             tableView.reloadData()
         } catch {
-            let title = "Oops, something went wrong"
-            let message = "Please check for network issues and come back later"
+            let title = FruitAppConstants.alertTitle
+            let message = FruitAppConstants.alertMessage
             let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
             let dismissAction = UIAlertAction(title: title, style: .default, handler: nil)
             alertController.addAction(dismissAction)
@@ -73,7 +73,7 @@ private extension FruitViewController {
 
 extension FruitViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "fruitDetailsIdentifier", sender: self)
+        performSegue(withIdentifier: FruitAppConstants.fruitDetailsSegue, sender: self)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destinationVC = segue.destination as? FruitDetailViewController {
