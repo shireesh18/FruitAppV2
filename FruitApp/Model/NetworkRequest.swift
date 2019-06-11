@@ -23,6 +23,7 @@ class NetworkRequest {
         task.resume()
        }
 }
+
 //MARK - method to send usage stats
 
 extension NetworkRequest {

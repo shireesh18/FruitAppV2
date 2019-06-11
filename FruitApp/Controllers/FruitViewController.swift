@@ -12,14 +12,13 @@ class FruitViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     let dataSource : FruitDataSource
-    var fruits : [Fruit] = []
     required init?(coder aDecoder: NSCoder) {
-        self.dataSource = FruitDataSource(fruits: fruits)
+        self.dataSource = FruitDataSource(fruits: [Fruit]())
         super.init(coder: aDecoder)
     }
     
     @IBAction func refreshBtnPressed(_ sender: UIBarButtonItem) {
-        getData()
+        getData(url : URL(string : FruitAppConstants.url)!)
     }
 }
 
@@ -27,7 +26,7 @@ class FruitViewController: UIViewController {
 extension FruitViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        getData()
+        getData(url : URL(string : FruitAppConstants.url)!)
         tableView.dataSource = dataSource
         tableView.delegate = self
         tableView.separatorStyle = .none
@@ -39,16 +38,15 @@ extension FruitViewController {
 //MARK - get data from api call
 
 extension FruitViewController {
-    func getData(){
-        let url = URL(string: FruitAppConstants.url)!
+    func getData(url : URL){
         let request = NetworkRequest(url: url)
-        //var executionTime : Double
         let startDate = Date()
         request.execute { [weak self] (data) in
             if let data = data {
                 self?.decode(data)
             }
         }
+  //MARK - send usage stats of the event load and its execution time
         NetworkRequest.sendUsageStats(event: FruitAppConstants.eventLoad, data: "\(Date().timeIntervalSince(startDate) * 1000)")
         }
 }

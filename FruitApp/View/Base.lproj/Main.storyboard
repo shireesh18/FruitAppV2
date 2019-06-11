@@ -55,7 +55,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yez-ir-2D2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5124" y="-536"/>
+            <point key="canvasLocation" x="-3345" y="-536"/>
         </scene>
         <!--Fruit Details-->
         <scene sceneID="eqH-Ss-M5M">
@@ -164,7 +164,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cH5-Dr-kJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4348" y="-537.48125937031489"/>
+            <point key="canvasLocation" x="-2454" y="-537"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="o90-97-JKz">
@@ -186,7 +186,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="opH-Hc-WIi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5978" y="-535"/>
+            <point key="canvasLocation" x="-4199" y="-537"/>
         </scene>
     </scenes>
 </document>

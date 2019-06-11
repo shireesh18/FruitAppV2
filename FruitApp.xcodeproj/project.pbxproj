@@ -18,6 +18,7 @@
 		69540D7622A9975B003A74C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69540D7522A9975B003A74C3 /* Assets.xcassets */; };
 		69540D7922A9975B003A74C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69540D7722A9975B003A74C3 /* LaunchScreen.storyboard */; };
 		69540D8422A9975B003A74C3 /* FruitAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69540D8322A9975B003A74C3 /* FruitAppTests.swift */; };
+		6975E7E322AFBAFC00D91003 /* MockFruitAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6975E7E222AFBAFC00D91003 /* MockFruitAPIClient.swift */; };
 		69BC9A2D22AE53C7002CBB7E /* FruitAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BC9A2C22AE53C7002CBB7E /* FruitAppConstants.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		69540D7F22A9975B003A74C3 /* FruitAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FruitAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69540D8322A9975B003A74C3 /* FruitAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitAppTests.swift; sourceTree = "<group>"; };
 		69540D8522A9975B003A74C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6975E7E222AFBAFC00D91003 /* MockFruitAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFruitAPIClient.swift; sourceTree = "<group>"; };
 		69BC9A2C22AE53C7002CBB7E /* FruitAppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitAppConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +104,7 @@
 		69540D8222A9975B003A74C3 /* FruitAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				6975E7E122AFBA7500D91003 /* Mocks */,
 				69540D8322A9975B003A74C3 /* FruitAppTests.swift */,
 				69540D8522A9975B003A74C3 /* Info.plist */,
 			);
@@ -144,6 +147,14 @@
 				69540D7722A9975B003A74C3 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6975E7E122AFBA7500D91003 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				6975E7E222AFBAFC00D91003 /* MockFruitAPIClient.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6975E7E322AFBAFC00D91003 /* MockFruitAPIClient.swift in Sources */,
 				69540D8422A9975B003A74C3 /* FruitAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,7 +468,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 54MUY99KR7;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FruitAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -477,7 +489,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 54MUY99KR7;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FruitAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

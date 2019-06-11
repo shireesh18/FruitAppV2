@@ -15,14 +15,14 @@ struct JSONData : Decodable {
     }
 }
 struct Fruit : Decodable {
-        let type: String?
-        let price : Float?
-        let weight : Float?
+       let type: String?
+       let price : Float?
+       let weight : Float?
     
     private enum CodingKeys: String, CodingKey {
         case type  = "type"
         case price = "price"
-        case weight    = "weight"
+        case weight = "weight"
     }
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
