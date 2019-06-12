@@ -6,8 +6,6 @@
 //  Copyright © 2019 Shireesh Marla. All rights reserved.
 //
 
-import Foundation
-
 struct JSONData : Decodable {
     let fruit : [Fruit]
     private enum CodingKeys: String, CodingKey {

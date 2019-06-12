@@ -22,7 +22,7 @@ class FruitAppTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
             let request = NetworkRequest(url: URL(string : FruitAppConstants.url)!)
-            request.execute { [weak self] (data) in
+            request.execute { [] (data) in
                 if let data = data {
                     let decoder = JSONDecoder()
                     do {

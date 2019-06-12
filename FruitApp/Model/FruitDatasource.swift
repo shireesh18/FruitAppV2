@@ -28,5 +28,3 @@ extension FruitDataSource : UITableViewDataSource {
         return cell
     }
 }
-
-

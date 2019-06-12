@@ -32,7 +32,6 @@ extension FruitViewController {
         tableView.separatorStyle = .none
         tableView.reloadData()
     }
-    
 }
 
 //MARK - get data from api call
@@ -46,7 +45,7 @@ extension FruitViewController {
                 self?.decode(data)
             }
         }
-  //MARK - send usage stats of the event load and its execution time
+  //  send usage stats of the event load and its execution time
         NetworkRequest.sendUsageStats(event: FruitAppConstants.eventLoad, data: "\(Date().timeIntervalSince(startDate) * 1000)")
         }
 }

@@ -28,6 +28,4 @@ class FruitDetailViewController: UIViewController {
         let weight = fruit?.weight ?? 0.0
         weightLabel?.text = "\(weight/100) KG"
     }
-  
-
 }

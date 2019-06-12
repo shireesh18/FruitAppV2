@@ -6,7 +6,7 @@
 //  Copyright © 2019 Shireesh Marla. All rights reserved.
 //
 
-import Foundation
+//import Foundation
 @testable import FruitApp
 
 class MockFruitAPIClient {
@@ -74,7 +74,6 @@ class MockFruitAPIClient {
             ],
       ]
     ]
-
 }
 extension MockFruitAPIClient {
     func getData(withCompletion completion: @escaping ([String : Any]?, Error?) -> Void){
@@ -84,7 +83,6 @@ extension MockFruitAPIClient {
         }else {
             completion(mockFruitResponse, nil)
         }
-        
     }
 }
 
