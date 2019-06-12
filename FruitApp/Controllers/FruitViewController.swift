@@ -22,7 +22,8 @@ class FruitViewController: UIViewController {
     }
 }
 
-//MARK - ViewController - invoke network call and set datasource
+//MARK - ViewController - invoke network call and set datasource for tableview
+
 extension FruitViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,9 +75,11 @@ private extension FruitViewController {
 //MARK - tableview Delegate methods
 
 extension FruitViewController : UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: FruitAppConstants.fruitDetailsSegue, sender: self)
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destinationVC = segue.destination as? FruitDetailViewController {
             if let indexPath = tableView.indexPathForSelectedRow {
