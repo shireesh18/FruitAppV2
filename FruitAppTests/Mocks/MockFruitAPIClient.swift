@@ -6,7 +6,6 @@
 //  Copyright © 2019 Shireesh Marla. All rights reserved.
 //
 
-//import Foundation
 @testable import FruitApp
 
 class MockFruitAPIClient {
